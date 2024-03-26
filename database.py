@@ -11,7 +11,7 @@ class Database:
         """
             Chargez les variables d'environnement de votre fichier .env, puis complétez les lignes 15 à 19 afin de récupérer les valeurs de ces variables
         """
-        load_dotenv("F:\IT\migration-de-bases-de-donn-es-BRITONMUVUNYI\connec.env")
+        load_dotenv()
         self.host =os.getenv("VAR1")
         self.port =int(os.getenv("VAR2"))
         self.database =os.getenv("VAR3")
